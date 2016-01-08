@@ -5,5 +5,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-carbon
 
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
 # Update engine
 PRODUCT_HOST_PACKAGES += brillo_update_payload
