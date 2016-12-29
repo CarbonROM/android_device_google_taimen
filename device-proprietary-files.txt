@@ -1,0 +1,61 @@
+# CNE
+etc/cne/Nexus/ATT/ATT_profiles.xml
+etc/cne/Nexus/ROW/ROW_profiles.xml
+etc/cne/Nexus/VZW/VZW_profiles.xml
+
+# Hotword Enrollment for WCD9340
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk:PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk:PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk:PRESIGNED
+
+# IMS/HD Voice
+-priv-app/CNEService/CNEService.apk
+
+# Sprint
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
+# VZW
+-app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
+etc/permissions/com.verizon.apn.xml
+etc/permissions/com.verizon.embms.xml
+etc/permissions/com.verizon.provider.xml
+-framework/VerizonUnifiedSettings.jar:PRESIGNED
+-priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
+
+# Camera
+etc/permissions/com.google.android.camera.experimental2017.xml
+etc/permissions/privapp-permissions-wahoo.xml
+-framework/com.google.android.camera.experimental2017.jar
+
+# Self Extractor
+etc/firmware/dnd.descriptor
+etc/firmware/dnd.sound_model
+etc/firmware/music_detector.descriptor
+etc/firmware/music_detector.sound_model
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.api-V1.0-java.jar
+-framework/com.quicinc.cne.jar
+-framework/embmslibrary.jar
+-framework/rcsimssettings.jar
+-framework/vendor.qti.qcril.am-V1.0-java.jar
+lib64/com.qualcomm.qti.imsrtpservice@1.0.so
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+lib64/libdiag_system.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib64/librcc.so
+lib/com.qualcomm.qti.imsrtpservice@1.0.so
+lib/libdiag_system.so
+lib/libimscamera_jni.so
+lib/libimsmedia_jni.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvt.so
+lib/lib-imsvtutils.so
+lib/librcc.so
