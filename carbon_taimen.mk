@@ -28,3 +28,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carbon.maintainer="frap129/Myself5"
+
+$(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
