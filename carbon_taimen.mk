@@ -25,3 +25,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
     BUILD_FINGERPRINT=google/taimen/taimen:10/QP1A.190711.020/5800535:user/release-keys \
     PRIVATE_BUILD_DESC="taimen-user 10 QP1A.190711.020 5800535 release-keys"
+
+$(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)

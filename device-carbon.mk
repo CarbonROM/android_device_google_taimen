@@ -26,3 +26,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Update engine
 PRODUCT_HOST_PACKAGES += brillo_update_payload
+
+# Self Extractor blobs that can be built
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+    com.android.ims.rcsmanager \
+    android.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.oemlock@1.0
