@@ -12,6 +12,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-carbon
 
+# Pixel Experience
+PRODUCT_COPY_FILES += \
+  device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
+
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
