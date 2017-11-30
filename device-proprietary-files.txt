@@ -28,6 +28,14 @@ etc/permissions/com.google.android.camera.experimental2017.xml
 etc/permissions/privapp-permissions-wahoo.xml
 -framework/com.google.android.camera.experimental2017.jar
 
+# /vendor/app
+-priv-app/QtiTelephonyService/QtiTelephonyService.apk
+-priv-app/datastatusnotification/datastatusnotification.apk
+-priv-app/TimeService/TimeService.apk
+-priv-app/ModemService/ModemService.apk
+-priv-app/SSRestartDetector/SSRestartDetector.apk
+-priv-app/wahoo_gfxdrv/wahoo_gfxdrv.apk
+
 # Self Extractor
 etc/firmware/dnd.descriptor
 etc/firmware/dnd.sound_model
