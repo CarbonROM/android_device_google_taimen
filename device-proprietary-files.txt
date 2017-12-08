@@ -31,6 +31,7 @@ etc/permissions/privapp-permissions-wahoo.xml
 # /vendor/app
 -priv-app/QtiTelephonyService/QtiTelephonyService.apk
 -priv-app/datastatusnotification/datastatusnotification.apk
+-app/embms/embms.apk
 -priv-app/TimeService/TimeService.apk
 -priv-app/ModemService/ModemService.apk
 -priv-app/SSRestartDetector/SSRestartDetector.apk
