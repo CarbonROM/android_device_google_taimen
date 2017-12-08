@@ -1,6 +1,3 @@
-# Camera
-PRODUCT_PACKAGES += libion
-
 # Fingerprint sensor type
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fingerprint=fpc
@@ -30,6 +27,4 @@ PRODUCT_PACKAGES += brillo_update_payload
 # Self Extractor blobs that can be built
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
-    com.android.ims.rcsmanager \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.oemlock@1.0
+    com.android.ims.rcsmanager
