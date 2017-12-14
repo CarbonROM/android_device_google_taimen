@@ -28,3 +28,6 @@ PRODUCT_PACKAGES += brillo_update_payload
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
     com.android.ims.rcsmanager
+
+# Build gapps
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
