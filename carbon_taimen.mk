@@ -23,8 +23,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:8.0.0/OPD1.170816.025/4424668:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 8.0.0 OPD1.170816.025 4424668 release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:8.1.0/OPM1.171019.011/4448085:user/release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 8.1.0 OPM1.171019.011 4448085 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carbon.maintainer="frap129/Myself5"
