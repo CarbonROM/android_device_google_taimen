@@ -1,0 +1,2 @@
+allow hal_power_default debugfs_wlan:dir search;
+allow hal_power_default debugfs_rpm:file read;
