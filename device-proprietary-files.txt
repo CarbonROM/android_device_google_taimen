@@ -12,18 +12,27 @@ etc/cne/Nexus/VZW/VZW_profiles.xml
 -priv-app/CNEService/CNEService.apk
 -app/ims/ims.apk
 
-# Sprint
+# Sprint/Project Fi
+-app/Tycho/Tycho.apk:app/Tycho/Tycho.apk:PRESIGNED
+etc/permissions/com.android.omadm.service.xml
+etc/permissions/com.android.sdm.plugins.connmo.xml
 etc/permissions/com.android.sdm.plugins.sprintdm.xml
--priv-app/SprintDM/SprintDM.apk
--priv-app/SprintHM/SprintHM.apk
-
-# Priv-app
+etc/permissions/obdm_permissions.xml
+etc/sysconfig/whitelist_com.android.omadm.service.xml
+lib/libdmengine.so
+lib/libdmjavaplugin.so
+-priv-app/CarrierServices/CarrierServices.apk:priv-app/CarrierServices/CarrierServices.apk:PRESIGNED
+-priv-app/CarrierSetup/CarrierSetup.apk:priv-app/CarrierSetup/CarrierSetup.apk:PRESIGNED
 -priv-app/ConnMO/ConnMO.apk
 -priv-app/DCMO/DCMO.apk
 -priv-app/DMService/DMService.apk
 -priv-app/obdm_stub/obdm_stub.apk:priv-app/obdm_stub/obdm_stub.apk:PRESIGNED
 -priv-app/OBDM_Permissions/OBDM_Permissions.apk:priv-app/OBDM_Permissions/OBDM_Permissions.apk:PRESIGNED
 -priv-app/OemDmTrigger/OemDmTrigger.apk
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
+# Priv-app
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # VZW
@@ -36,7 +45,6 @@ etc/permissions/com.verizon.llkagent.xml
 etc/permissions/com.verizon.provider.xml
 etc/permissions/com.verizon.services.xml
 etc/permissions/features-verizon.xml
-etc/permissions/obdm_permissions.xml
 etc/permissions/vzw_mvs_permissions.xml
 -framework/VerizonUnifiedSettings.jar:PRESIGNED
 -priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
@@ -47,7 +55,6 @@ etc/permissions/com.google.android.camera.experimental2017.xml
 -app/EaselServicePrebuilt/EaselServicePrebuilt.apk
 
 # Permission
-etc/permissions/com.android.sdm.plugins.connmo.xml
 etc/permissions/privapp-permissions-wahoo.xml
 
 # Self Extractor
@@ -77,7 +84,3 @@ lib/lib-imsvtextutils.so
 lib/lib-imsvt.so
 lib/lib-imsvtutils.so
 lib/librcc.so
-
-# OMA DM
-lib/libdmengine.so
-lib/libdmjavaplugin.so
