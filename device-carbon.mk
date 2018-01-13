@@ -28,5 +28,9 @@ PRODUCT_PACKAGES += brillo_update_payload
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Privileged app permissions
+PRODUCT_COPY_FILES += \
+    device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
+
 # Build gapps
 $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
