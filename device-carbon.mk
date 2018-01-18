@@ -26,5 +26,4 @@ PRODUCT_PACKAGES += brillo_update_payload
 
 # Self Extractor blobs that can be built
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0 \
-    com.android.ims.rcsmanager
+    netutils-wrapper-1.0
