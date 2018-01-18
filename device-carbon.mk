@@ -4,7 +4,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager
+    com.android.ims.rcsmanager \
+    RcsService \
+    PresencePolling
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-carbon
