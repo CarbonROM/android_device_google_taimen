@@ -10,6 +10,7 @@ etc/cne/Nexus/VZW/VZW_profiles.xml
 
 # IMS/HD Voice
 -priv-app/CNEService/CNEService.apk
+-app/ims/ims.apk
 
 # Sprint
 -priv-app/SprintDM/SprintDM.apk
