@@ -1,3 +1,7 @@
+# Camera
+etc/permissions/com.google.android.camera.experimental2017.xml
+-framework/com.google.android.camera.experimental2017.jar
+
 # CNE
 etc/cne/Nexus/ATT/ATT_profiles.xml
 etc/cne/Nexus/ROW/ROW_profiles.xml
@@ -12,15 +16,15 @@ etc/cne/Nexus/VZW/VZW_profiles.xml
 -priv-app/CNEService/CNEService.apk
 -app/ims/ims.apk
 
-# Tycho
--app/Tycho/Tycho.apk:app/Tycho/Tycho.apk:PRESIGNED
+# OMA DM
+lib/libdmengine.so
+lib/libdmjavaplugin.so
 
-# Sprint
-etc/permissions/com.android.sdm.plugins.sprintdm.xml
--priv-app/SprintDM/SprintDM.apk
--priv-app/SprintHM/SprintHM.apk
+# Permission
+etc/permissions/com.android.sdm.plugins.connmo.xml
+etc/permissions/privapp-permissions-wahoo.xml
 
-# Priv-app
+# priv-app
 -priv-app/CarrierServices/CarrierServices.apk:priv-app/CarrierServices/CarrierServices.apk:PRESIGNED
 -priv-app/CarrierSetup/CarrierSetup.apk:priv-app/CarrierSetup/CarrierSetup.apk:PRESIGNED
 -priv-app/ConnMO/ConnMO.apk
@@ -32,6 +36,54 @@ etc/permissions/com.android.sdm.plugins.sprintdm.xml
 -priv-app/OBDM_Permissions/OBDM_Permissions.apk:priv-app/OBDM_Permissions/OBDM_Permissions.apk:PRESIGNED
 -priv-app/OemDmTrigger/OemDmTrigger.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Tycho
+-app/Tycho/Tycho.apk:app/Tycho/Tycho.apk:PRESIGNED
+
+# Self Extractor
+etc/firmware/dnd.descriptor
+etc/firmware/dnd.sound_model
+etc/firmware/music_detector.descriptor
+etc/firmware/music_detector.sound_model
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.api-V1.0-java.jar
+-framework/com.quicinc.cne.jar
+-framework/embmslibrary.jar
+-framework/rcsimssettings.jar
+-framework/vendor.qti.qcril.am-V1.0-java.jar
+lib/com.qualcomm.qti.imsrtpservice@1.0.so
+lib/libdiag_system.so
+lib/libimscamera_jni.so
+lib/libimsmedia_jni.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvt.so
+lib/lib-imsvtutils.so
+lib/librcc.so
+lib64/com.qualcomm.qti.imsrtpservice@1.0.so
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+lib64/libdiag_system.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib64/librcc.so
+
+# Sprint
+etc/permissions/com.android.sdm.plugins.sprintdm.xml
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
+# /vendor/app
+-priv-app/QtiTelephonyService/QtiTelephonyService.apk
+-priv-app/datastatusnotification/datastatusnotification.apk
+-app/embms/embms.apk
+-priv-app/TimeService/TimeService.apk
+-priv-app/ModemService/ModemService.apk
+-priv-app/SSRestartDetector/SSRestartDetector.apk
 
 # VZW
 -app/vzw_msdc_api/vzw_msdc_api.apk:app/vzw_msdc_api/vzw_msdc_api.apk:PRESIGNED
@@ -47,57 +99,3 @@ etc/permissions/obdm_permissions.xml
 etc/permissions/vzw_mvs_permissions.xml
 -framework/VerizonUnifiedSettings.jar:PRESIGNED
 -priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
-
-# Camera
-etc/permissions/com.google.android.camera.experimental2017.xml
--framework/com.google.android.camera.experimental2017.jar
-
-# Permission
-etc/permissions/com.android.sdm.plugins.connmo.xml
-etc/permissions/privapp-permissions-wahoo.xml
-
-# /vendor/app
--priv-app/QtiTelephonyService/QtiTelephonyService.apk
--priv-app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--priv-app/TimeService/TimeService.apk
--priv-app/ModemService/ModemService.apk
--priv-app/SSRestartDetector/SSRestartDetector.apk
--priv-app/wahoo_gfxdrv/wahoo_gfxdrv.apk
-
-# Self Extractor
-etc/firmware/dnd.descriptor
-etc/firmware/dnd.sound_model
-etc/firmware/music_detector.descriptor
-etc/firmware/music_detector.sound_model
--framework/cneapiclient.jar
--framework/com.quicinc.cne.api-V1.0-java.jar
--framework/com.quicinc.cne.jar
--framework/embmslibrary.jar
--framework/rcsimssettings.jar
--framework/vendor.qti.qcril.am-V1.0-java.jar
-lib64/com.qualcomm.qti.imsrtpservice@1.0.so
-lib64/libaptX_encoder.so
-lib64/libaptXHD_encoder.so
-lib64/libdiag_system.so
-lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
-lib64/lib-imsvideocodec.so
-lib64/lib-imsvtextutils.so
-lib64/lib-imsvt.so
-lib64/lib-imsvtutils.so
-lib64/librcc.so
-lib/com.qualcomm.qti.imsrtpservice@1.0.so
-lib/libdiag_system.so
-lib/libimscamera_jni.so
-lib/libimsmedia_jni.so
-lib/lib-imsvideocodec.so
-lib/lib-imsvtextutils.so
-lib/lib-imsvt.so
-lib/lib-imsvtutils.so
-lib/librcc.so
-
-# OMA DM
-lib/libdmengine.so
-lib/libdmjavaplugin.so
-
