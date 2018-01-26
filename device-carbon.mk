@@ -33,3 +33,19 @@ PRODUCT_PACKAGES += \
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
     device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
+
+# Build gapps
+GAPPS_VARIANT := nano
+PRODUCT_PACKAGES += \
+    CameraGoogle \
+    PixelLauncher \
+    Search \
+    Wallpapers
+
+GAPPS_PACKAGE_OVERRIDES := \
+    CameraGoogle \
+    PixelLauncher \
+    Search \
+    Wallpapers
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
