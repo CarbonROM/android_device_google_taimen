@@ -33,3 +33,5 @@ PRODUCT_PACKAGES += \
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
     device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
+
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
