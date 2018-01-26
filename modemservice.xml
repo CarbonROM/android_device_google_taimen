@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Grant Broadcast to ModemServices -->
+<config>
+    <!-- ModemServices requires USB_PORT_CHANGED -->
+    <allow-implicit-broadcast action="android.hardware.usb.action.USB_PORT_CHANGED" />
+</config>
