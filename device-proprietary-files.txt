@@ -44,6 +44,7 @@ etc/permissions/vzw_mvs_permissions.xml
 # Camera
 etc/permissions/com.google.android.camera.experimental2017.xml
 -framework/com.google.android.camera.experimental2017.jar
+-app/EaselServicePrebuilt/EaselServicePrebuilt.apk
 
 # Permission
 etc/permissions/com.android.sdm.plugins.connmo.xml
