@@ -1,6 +1,7 @@
 # Camera
 etc/permissions/com.google.android.camera.experimental2017.xml
 -framework/com.google.android.camera.experimental2017.jar
+-app/EaselServicePrebuilt/EaselServicePrebuilt.apk
 
 # CNE
 etc/cne/Nexus/ATT/ATT_profiles.xml
