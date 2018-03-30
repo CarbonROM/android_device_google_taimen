@@ -71,6 +71,10 @@ lib/libdmjavaplugin.so
 -priv-app/SprintDM/SprintDM.apk
 -priv-app/SprintHM/SprintHM.apk
 
+# Misc
+-priv-app/GCS/GCS.apk:priv-app/GCS/GCS.apk:PRESIGNED
+-priv-app/DiagMon/DiagMon.apk
+
 # VZW
 -app/vzw_msdc_api/vzw_msdc_api.apk:app/vzw_msdc_api/vzw_msdc_api.apk:PRESIGNED
 -app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
