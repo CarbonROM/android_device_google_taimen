@@ -15,6 +15,10 @@ DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-carbon
 PRODUCT_COPY_FILES += \
   device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
 
+# ModemService
+PRODUCT_COPY_FILES += \
+  device/google/taimen/whitelist_modemservice.xml:system/etc/sysconfig/whitelist_modemservice.xml
+
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
