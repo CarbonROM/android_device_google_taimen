@@ -4,6 +4,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager.xml \
     com.android.ims.rcsmanager \
     RcsService \
     PresencePolling
@@ -30,9 +31,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Update engine
 PRODUCT_HOST_PACKAGES += brillo_update_payload
 
-# Self Extractor blobs that can be built
-PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
 
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
