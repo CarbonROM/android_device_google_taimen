@@ -28,8 +28,8 @@ etc/permissions/privapp-permissions-wahoo.xml
 -framework/com.quicinc.cne.api-V1.0-java.jar
 -framework/com.quicinc.cne.jar
 -framework/embmslibrary.jar
+-framework/qcrilhook.jar
 -framework/rcsimssettings.jar
--framework/vendor.qti.qcril.am-V1.0-java.jar
 lib64/com.qualcomm.qti.imsrtpservice@1.0.so
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
