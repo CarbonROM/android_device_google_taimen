@@ -2,25 +2,54 @@
 
 <!-- These are configurations that should exist on Google's 2016 and newer Nexus devices. -->
 <config>
-    <!-- These should be added to all Nexus and GPe devices -->
-    <feature name="com.google.android.feature.GOOGLE_BUILD" />
-    <feature name="com.google.android.feature.GOOGLE_EXPERIENCE" />
-
     <!-- This is meant to be the canonical feature identifying 2016 and newer Nexus devices. -->
     <feature name="com.google.android.feature.PIXEL_EXPERIENCE" />
 
-    <!-- This is meant to be the canonical feature identifying 2017 and newer Nexus devices. -->
-    <feature name="com.google.android.feature.PIXEL_2017_EXPERIENCE" />
+    <!-- The feature identifying devices which are able to use the Android Wellbeing app. -->
+    <feature name="com.google.android.feature.WELLBEING" />
 
     <!-- Enable Zero Touch Provisioning support for 2016 and newer Nexus devices. -->
     <feature name="com.google.android.feature.ZERO_TOUCH" />
 
+    <!-- Allow WfcActivation app scheduled jobs to run when app in background. -->
+    <allow-in-power-save-except-idle package="com.google.android.wfcactivation" />
+
+    <!-- Allow ssr detector service in background -->
+    <allow-in-power-save package="com.google.SSRestartDetector" />
+
+    <!-- Allow connectivitymonitor service in background -->
+    <allow-in-power-save package="com.google.android.connectivitymonitor" />
+
+    <!-- Whitelist so headless app JobIntentService can work. b/73250911 -->
+    <allow-in-power-save-except-idle package="com.google.android.carrier" />
+
+    <!-- These are telephony components that need to run in the background -->
+    <allow-in-power-save package="com.qualcomm.atfwd" />
+    <allow-in-power-save package="com.qualcomm.embms" />
+    <allow-in-power-save package="com.qualcomm.qti.telephonyservice" />
+    <allow-in-power-save package="com.qulacomm.qcrilmsgtunnel" />
+    <allow-in-power-save package="com.qualcomm.qti.ims" />
+    <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
+
+    <!-- Verizon MVS app: pre-installed and should be disabled until Verizon SIM inserted. -->
+    <disabled-until-used-preinstalled-carrier-app package="com.verizon.mips.services" />
+
+    <!-- Allow eMBMS middleware services to run in the background -->
+    <allow-in-power-save package="com.qualcomm.ltebc_vzw" />
+    <allow-in-power-save package="com.qualcomm.ltebc" />
+
     <!-- This defines the Photos preload feature for specifically the 2017 Pixel devices. -->
     <feature name="com.google.android.apps.photos.PIXEL_2017_PRELOAD" />
 
-    <!-- Both versions of this string are needed due to a miscommunication. b/29978934 -->
-    <feature name="com.google.android.apps.photos.NEXUS_PRELOAD" />
-    <feature name="com.google.android.apps.photos.nexus_preload" />
+    <!-- This is meant to be the canonical feature identifying 2017 and newer Nexus devices. -->
+    <feature name="com.google.android.feature.PIXEL_2017_EXPERIENCE" />
+
+    <!-- These should be added to all Nexus and GPe devices -->
+    <feature name="com.google.android.feature.GOOGLE_EXPERIENCE" />
+    <feature name="com.google.android.feature.GOOGLE_BUILD" />
+
+    <!-- This should declare the version of Exchange that ships -->
+    <feature name="com.google.android.feature.EXCHANGE_6_2" />
 
     <!-- This is for preloaded Google Dialer to get play store update. -->
     <feature name="com.google.android.apps.dialer.SUPPORTED" />
