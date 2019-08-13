@@ -25,7 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
     PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190705.001 5565753 release-keys"
 
-BUILD_FINGERPRINT := google/taimen/taimen:9/PQ3A.190705.001/5565753:user/release-keys
+BUILD_FINGERPRINT := google/taimen/taimen:9/PQ3A.190801.002/5670241:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carbon.maintainer="frap129/Myself5"
