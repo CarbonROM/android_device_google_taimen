@@ -29,6 +29,7 @@
     <allow-in-power-save package="com.qualcomm.qti.telephonyservice" />
     <allow-in-power-save package="com.qulacomm.qcrilmsgtunnel" />
     <allow-in-power-save package="com.qualcomm.qti.ims" />
+    <allow-in-data-usage-save package="com.google.android.ims" />
     <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
 
     <!-- Verizon MVS app: pre-installed and should be disabled until Verizon SIM inserted. -->

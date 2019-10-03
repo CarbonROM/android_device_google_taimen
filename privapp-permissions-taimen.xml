@@ -4,10 +4,6 @@
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.android.hotwordenrollment.tgoogle">
-        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
         <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
@@ -22,6 +18,7 @@
 
     <privapp-permissions package="com.google.android.carriersetup">
         <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
@@ -45,6 +42,7 @@
 
      <privapp-permissions package="com.google.android.wfcactivation">
         <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.READ_LOGS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
