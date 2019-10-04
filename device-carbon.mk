@@ -14,7 +14,7 @@ DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-carbon
 
 # Pixel Experience
 PRODUCT_COPY_FILES += \
-  device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
+  device/google/taimen/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml
 
 # ModemService
 PRODUCT_COPY_FILES += \
