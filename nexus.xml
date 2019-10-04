@@ -5,6 +5,9 @@
     <!-- This is meant to be the canonical feature identifying 2016 and newer Nexus devices. -->
     <feature name="com.google.android.feature.PIXEL_EXPERIENCE" />
 
+    <!-- The feature identifying devices which are able to use the Turbo app -->
+    <feature name="com.google.android.feature.TURBO_PRELOAD" />
+
     <!-- The feature identifying devices which are able to use the Android Wellbeing app. -->
     <feature name="com.google.android.feature.WELLBEING" />
 
@@ -20,6 +23,12 @@
     <!-- Allow connectivitymonitor service in background -->
     <allow-in-power-save package="com.google.android.connectivitymonitor" />
 
+    <!-- Allow ramdump uploader service in background -->
+    <allow-in-power-save package="com.android.ramdump" />
+
+    <!-- Whitelist log pkg so JobIntentService can work. b/71630894 -->
+    <allow-in-power-save-except-idle package="com.google.android.apps.carrier.log" />
+
     <!-- Whitelist so headless app JobIntentService can work. b/73250911 -->
     <allow-in-power-save-except-idle package="com.google.android.carrier" />
 
@@ -31,8 +40,14 @@
     <allow-in-power-save package="com.qualcomm.qti.ims" />
     <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
 
-    <!-- Verizon MVS app: pre-installed and should be disabled until Verizon SIM inserted. -->
-    <disabled-until-used-preinstalled-carrier-app package="com.verizon.mips.services" />
+    <!-- Pre-installed carrier apps which should be disabled until a matching SIM is inserted. -->
+    <disabled-until-used-preinstalled-carrier-app package="com.google.android.apps.tycho" />
+
+    <!-- Whitelist so the app can run JobIntentService in background. b/77932342 -->
+    <allow-in-power-save-except-idle package="com.google.android.tetheringentitlement" />
+    <!-- Tethering entitlement check app should have Internet access while in data saving mode,
+         even if they're in background. -->
+    <allow-in-data-usage-save package="com.google.android.tetheringentitlement" />
 
     <!-- Allow eMBMS middleware services to run in the background -->
     <allow-in-power-save package="com.qualcomm.ltebc_vzw" />
