@@ -79,7 +79,7 @@ etc/permissions/com.android.vzwomatrigger.xml
 product/etc/permissions/com.verizon.apn.xml
 etc/permissions/com.verizon.embms.xml
 etc/permissions/com.verizon.llkagent.xml
-etc/permissions/com.verizon.services.xml
+product/etc/permissions/com.verizon.services.xml
 product/etc/permissions/features-verizon.xml
 product/etc/permissions/vzw_mvs_permissions.xml
 product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so
