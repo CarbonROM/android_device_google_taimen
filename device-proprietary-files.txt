@@ -28,7 +28,6 @@ etc/permissions/privapp-permissions-wahoo.xml
 -framework/cneapiclient.jar
 -framework/com.quicinc.cne.api-V1.0-java.jar
 -framework/com.quicinc.cne.jar
--framework/embmslibrary.jar
 -framework/qcrilhook.jar
 -framework/rcsimssettings.jar
 lib64/com.qualcomm.qti.imsrtpservice@1.0.so
@@ -77,7 +76,6 @@ product/lib/libdmjavaplugin.so
 -product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 etc/permissions/com.android.vzwomatrigger.xml
 product/etc/permissions/com.verizon.apn.xml
-etc/permissions/com.verizon.embms.xml
 etc/permissions/com.verizon.llkagent.xml
 product/etc/permissions/com.verizon.services.xml
 product/etc/permissions/features-verizon.xml
